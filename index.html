@@ -3,89 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delicious Dumplings Menu</title>
+    <title>Delicious Momos</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             max-width: 600px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #fff9f2;
+            background-color: #fff9f5;
             color: #333;
+            line-height: 1.6;
         }
         .header {
             text-align: center;
             margin-bottom: 30px;
+            padding: 20px;
+            background: linear-gradient(135deg, #e65c00 0%, #f67280 100%);
+            color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.2em;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+        .menu-section {
+            margin-bottom: 25px;
+        }
+        .menu-section-title {
+            color: #e65c00;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #ffd3b6;
+            padding-bottom: 5px;
         }
         .menu-item {
             background: white;
             padding: 15px;
             margin-bottom: 15px;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .menu-item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        .item-name {
+            font-weight: 600;
+            font-size: 1.1em;
         }
         .price {
-            float: right;
+            color: #e65c00;
             font-weight: bold;
-            color: #e65100;
         }
         .description {
             color: #666;
-            font-size: 0.9em;
+            font-size: 0.95em;
             margin-top: 5px;
         }
         .footer {
             text-align: center;
             margin-top: 30px;
-            padding-top: 20px;
-            border-top: 1px solid #ddd;
-            font-size: 0.9em;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .footer p {
+            margin: 8px 0;
             color: #666;
+        }
+        .veg-indicator {
+            color: #00b894;
+            margin-right: 5px;
+        }
+        .non-veg-indicator {
+            color: #e17055;
+            margin-right: 5px;
         }
     </style>
 </head>
 <body>
     <div class="header">
-        <h1>Delicious Dumplings</h1>
-        <p>Handmade with love ❤️</p>
+        <h1>Delicious Momos</h1>
     </div>
 
-    <div class="menu-item">
-        <div>
-            <span>Pork & Chive Dumplings</span>
-            <span class="price">$8.00 / 6pcs</span>
+    <div class="menu-section">
+        <div class="menu-section-title">Vegetarian Momos</div>
+        
+        <div class="menu-item">
+            <div class="menu-item-header">
+                <span class="item-name"><span class="veg-indicator">🥬</span>Veg Dumplings - Steamed</span>
+                <span class="price">₹50</span>
+            </div>
+            <div class="description">Mixed vegetables with a complimentary glass of soup. Soft, tender steamed momos that melt in your mouth.</div>
         </div>
-        <div class="description">Classic handmade dumplings filled with minced pork, chives, and ginger</div>
+
+        <div class="menu-item">
+            <div class="menu-item-header">
+                <span class="item-name"><span class="veg-indicator">🥬</span>Veg Dumplings - Fried</span>
+                <span class="price">₹60</span>
+            </div>
+            <div class="description">Mixed vegetables with a complimentary glass of soup. Perfectly crispy and crunchy outer layer.</div>
+        </div>
     </div>
 
-    <div class="menu-item">
-        <div>
-            <span>Chicken & Mushroom Dumplings</span>
-            <span class="price">$8.00 / 6pcs</span>
+    <div class="menu-section">
+        <div class="menu-section-title">Non-Vegetarian Momos</div>
+        
+        <div class="menu-item">
+            <div class="menu-item-header">
+                <span class="item-name"><span class="non-veg-indicator">🍗</span>Non-Veg Dumplings - Steamed</span>
+                <span class="price">₹60</span>
+            </div>
+            <div class="description">Tender minced chicken and caramelized onions, perfectly steamed to juicy perfection.</div>
         </div>
-        <div class="description">Tender minced chicken with shiitake mushrooms</div>
-    </div>
 
-    <div class="menu-item">
-        <div>
-            <span>Vegetable Dumplings</span>
-            <span class="price">$7.50 / 6pcs</span>
+        <div class="menu-item">
+            <div class="menu-item-header">
+                <span class="item-name"><span class="non-veg-indicator">🍗</span>Non-Veg Dumplings - Fried</span>
+                <span class="price">₹70</span>
+            </div>
+            <div class="description">Tender minced chicken and caramelized onions, with a satisfyingly crunchy exterior.</div>
         </div>
-        <div class="description">Mixed vegetables with glass noodles (Vegetarian)</div>
-    </div>
-
-    <div class="menu-item">
-        <div>
-            <span>Special Combo</span>
-            <span class="price">$15.00 / 12pcs</span>
-        </div>
-        <div class="description">Mix and match any two flavors (6pcs each)</div>
     </div>
 
     <div class="footer">
-        <p>✨ All dumplings are made fresh daily ✨</p>
-        <p>Cash only • Available until sold out</p>
-        <p>Hours: Tuesday-Sunday, 11:00 AM - 7:00 PM</p>
+        <p>💫 Every order comes with complimentary soup 💫</p>
+        <p>🕐 Open Daily: 6:00 PM - 9:30 PM</p>
+        <p>💳 Cash & UPI Payments Accepted</p>
+        <p>🥬 = Vegetarian | 🍗 = Non-Vegetarian</p>
     </div>
 </body>
 </html>
